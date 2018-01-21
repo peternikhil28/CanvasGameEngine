@@ -29,6 +29,6 @@ A Slot Game Engine is developed using the Game Engine built on HTML Canvas.
 To view the Slot Game :
 1. Download the files.
 2. Install NodeJS on your PC.
-3. Open cmd in the project directoryand exucute the code : 'node server.js'.
+3. Open cmd in the project directory and exucute the code : 'node server.js'.
 4. Now a local host is created at port 8081.
 5. Open browser and go to link http://localhost:8081/index.html
