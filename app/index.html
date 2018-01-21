@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NetEnt GAME TEST</title>
+<style>
+    body
+    {
+        margin: 0;
+        background-color: black;
+    }
+
+    canvas
+    {
+        background-color: white;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #initText
+    {
+        color:WHITE;
+        text-align: center;
+        margin-top : 40vh;
+        font-size: 4vw;
+        font-family: Arial;
+    }
+</style>
+
+
+<body>
+
+<!-- Init Text -->
+<div id="loader">
+    <h1 id="initText">Loading..</h1>
+</div>
+
+
+<script>
+
+    let jsList;
+    let index = 0;
+
+    loadJSON('project.json', onDataLoaded);
+
+    function loadJSON(path, callback) {
+
+        let xobj = new XMLHttpRequest();
+        xobj.overrideMimeType("application/json");
+        xobj.open('GET', path, true); // Replace 'my_data' with the path to your file
+        xobj.onreadystatechange = function () {
+            if (xobj.readyState == 4 && xobj.status == "200") {
+                // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+                callback(xobj.responseText);
+            }
+        };
+        xobj.send(null);
+    }
+
+    function onDataLoaded(inData)
+    {
+        let data = JSON.parse(inData);
+        jsList = data["jsList"];
+
+        loadJSFiles();
+    }
+
+    // Sequential Loading jsList
+    function loadJSFiles()
+    {
+        if(index<jsList.length)
+        {
+            loadScript(jsList[index]);
+            index++;
+        }
+        else
+        {
+            jsFilesLoadComplete();
+        }
+    }
+
+    function loadScript(url)
+    {
+        let body = document.body;
+        let script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = url;
+        script.onload = loadJSFiles;
+        body.appendChild(script);
+    }
+
+    function jsFilesLoadComplete()
+    {
+        BlankLoader.load();
+    }
+</script>
+</body>
+</html>

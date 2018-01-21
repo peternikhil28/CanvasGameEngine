@@ -1,0 +1,15 @@
+{
+ "screenName" : "FruitSlotMachine",
+
+ "objects" : [
+  {"name": "MachineHolder", "type": "MachineHolder", "x": 640, "y": 288, "w": 795, "h": 154},
+  {"name": "Icon00", "type": "Icon", "x": 375, "y": 288, "w": 235, "h": 155},
+  {"name": "Icon01", "type": "Icon", "x": 640, "y": 288, "w": 235, "h": 155},
+  {"name": "Icon10", "type": "Icon", "x": 375, "y": 443, "w": 235, "h": 155},
+  {"name": "button", "type": "Button", "x": 640, "y": 500, "w": 120, "h": 120},
+  {"name": "Bonus", "type": "Label", "x": 1180, "y": 50, "w": 80, "h": 50},
+  {"name": "BonusValue", "type": "Label", "x": 1240, "y": 50, "w": 30, "h": 30},
+  {"name": "Win", "type": "Label", "x": 640, "y": 120, "w": 300, "h": 70}
+ ]
+}
+

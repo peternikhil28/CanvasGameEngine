@@ -1,0 +1,37 @@
+{
+  "name": "NetEnt-Test",
+  "version": "1.0",
+  "jsList" :[
+    "NTCoreEngine/BlankLoader.js",
+    "NTCoreEngine/NTDisplayObject.js",
+    "NTCoreEngine/NTContainer.js",
+    "NTCoreEngine/NTLoader.js",
+    "NTCoreEngine/NTGameScene.js",
+    "NTCoreEngine/NTGameScreen.js",
+    "NTCoreEngine/NTScreenManager.js",
+    "NTCoreEngine/NTSprite.js",
+    "NTCoreEngine/NTTweener.js",
+    "NTCoreEngine/NTUtils.js",
+    "NTCoreEngine/NTButton.js",
+    "NTCoreEngine/NTPoint.js",
+    "NTCoreEngine/NTRect.js",
+    "NTCoreEngine/NTEventHandler.js",
+    "NTCoreEngine/NTServer.js",
+    "NTCoreEngine/NTFileLoader.js",
+    "NTCoreEngine/NTEngine.js",
+    "NTCoreEngine/NTSize.js",
+    "NTCoreEngine/NTLabel.js",
+    "NTCoreEngine/NTNoInternetScreen.js",
+
+    "NTSlotEngine/NTSlotMachine.js",
+    "NTSlotEngine/NTSlotReel.js",
+    "NTSlotEngine/NTSlotReelManager.js",
+    "NTSlotEngine/NTSlotUtils.js",
+
+    "main.js",
+    "src/resource.js",
+
+    "src/fruitslot/FruitSlotMachine.js",
+    "src/popups/NoInternetPopup.js"
+  ]
+}

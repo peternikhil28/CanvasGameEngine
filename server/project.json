@@ -1,0 +1,9 @@
+{
+  "name": "NetEnt-Test",
+  "version": "1.0",
+  "jsList" :[
+    "NTSlotEngine/NTSlotEvaluator.js",
+    "NTSlotEngine/NTSlotGenerator.js",
+    "NTSlotEngine/NTSlotMachine.js"
+  ]
+}
