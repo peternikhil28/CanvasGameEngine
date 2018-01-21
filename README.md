@@ -1,6 +1,6 @@
-# CanvasGameEngine
+# Canvas Game Engine
 
-The poroject contains a server application developed in NodeJS and a Game Engine developed on the core HTML Canvas using ECMA Script6.
+The project contains a server application developed in NodeJS and a Game Engine developed on the core HTML Canvas using ECMA Script6.
 
 >	Developed a rendering algorithm to draw elements at minimal draw calls.
 
